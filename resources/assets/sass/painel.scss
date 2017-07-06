@@ -1,0 +1,170 @@
+//variaveis
+
+$azul: #007799;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+.conteudo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*------------------ Barra lateral ------------------*/
+.barra-lateral {
+  min-width: 20%;
+  background: #19262D;
+  color: white;
+  min-height: 100vh;
+}
+
+
+.barra-logo {
+  //border-right: 1px solid white;
+  background: $azul;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-logo p {
+  margin: 0;
+}
+
+.lista-links {
+  margin-top: 20px;
+  font-size: large;
+  list-style-type: none;
+}
+
+.lista-links li {
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.lista-links li a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+/*------------------Barra lateral fim ------------------*/
+
+/*------------------ Barra superior ------------------*/
+
+.barra-superior {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  color: white;
+  background-color: $azul;
+}
+
+.btn-sair {
+  color: #FFFFFF;
+}
+
+.btn-sair:hover {
+  color: $azul;
+  //opacity: 0.4;
+  transition: 0.4s;
+  background-color: white;
+}
+
+/*------------------ Barra superior fim ------------------*/
+
+/*------------------ #container ------------------*/
+
+#container {
+  padding-top: 40px;
+  overflow: auto;
+  position: relative;
+  flex-grow: 1;
+}
+
+/*------------------ #container fim ------------------*/
+
+.row {
+  margin: 0px;
+}
+/* ------------------ #content ------------------ */
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+
+}
+
+/* ------------------ #content fim ------------------ */
+
+/* ------------------ palestrantes  ------------------ */
+
+painel-header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-salvar {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+table img {
+  width: 40px;
+}
+
+.acoes {
+  width: 120px;
+}
+
+.acao {
+  color: white;
+  margin: 0px;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.acao-visualizar {
+  background-color: #30BCED;
+}
+
+.acao-remover {
+  background-color: #E4572E;
+}
+
+table a:hover {
+  text-decoration: none;
+}
+
+/* ------------------ palestrantes fim ------------------ */
+
+/* ------------------ palestrantes show ------------------ */
+.palestrantes-show .panel-body {
+  text-align: center;
+}
+
+.palestrantes-show img {
+  max-width: 350px;
+}
+/* ------------------ palestrantes show fim ------------------ */
